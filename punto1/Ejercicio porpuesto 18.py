@@ -1,0 +1,10 @@
+codigo_empleado = input('Ingrese el código del empleado')
+nombres = input('Ingrese los nombres del empleado')
+horas_trabajadas_mes = float(input('Ingrese las horas trabajadas al mes'))
+valor_hora = float(input('Ingrese el valor de la hora trabajada'))
+porcentaje_retencion_fuente = float(input('Ingrese el porcentaje de retención en la fuente'))
+
+print('Código del empleado: ', codigo_empleado)
+print('Nombres: ', nombres)
+print('Salario bruto: ', horas_trabajadas_mes * valor_hora)
+print('Salario neto: ', (horas_trabajadas_mes * valor_hora) * (1 - porcentaje_retencion_fuente / 100))
